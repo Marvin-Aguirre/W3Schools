@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Arrays</title>
+</head>
+<body>
+    <h1>Constant Arrays</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        // Create an Array:
+        const elements = ["Element 1", "Element 2", "Element 3"];
+        // Change an element:
+        elements[0] = "Element 0";
+        // Add an element:
+        elements.push("Element 4");
+        // Display the Array:
+        document.getElementById("demo").innerHTML = elements; 
+        //ou can NOT reassign a constant array
+        try{
+            elements=["a 1", "b 2", "c 3"];
+        }catch (err){
+            document.getElementById("demo1").innerHTML = err;
+        }
+    </script>
+</body>
+</html>

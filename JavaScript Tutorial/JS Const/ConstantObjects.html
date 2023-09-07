@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        // Create an object:
+        const student = {name:"Marvin", carne:"14616", lastName:"Aguirre"};
+        // Change a property:
+        student.name = "Estuardo";
+        // Add a property:
+        student.age = "21";
+        // Display the property:
+        document.getElementById("demo").innerHTML = "student's name is " + student.name; 
+
+        //You can not reassing to object
+        try{
+            student = {name:"Juan", carne:"21212", lastName:"Marro"}; 
+        }catch(err){
+            document.getElementById("demo1").innerHTML = err;
+        }
+
+    </script>
+</body>
+</html>
